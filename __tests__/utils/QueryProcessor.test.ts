@@ -30,7 +30,19 @@ describe("QueryProcessor", () => {
         const query = "What is your name?";
         const response: string = QueryProcessor(query);
         expect(response).toBe((
-            "Rohan"
+            "pjitjangg"
           ));
+    })
+
+    test('should compute 15 plus 20', () => {
+        const query = "What is 15 plus 20?";
+        const response: string = QueryProcessor(query);
+        expect(response).toBe("35");
+    })
+
+    test('should find largest of 91, 23, 17', () => {
+        const query = "Which of the following numbers is the largest: 91, 23, 17?";
+        const response: string = QueryProcessor(query);
+        expect(response).toBe("91");
     })
 });
